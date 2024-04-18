@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { Container } from './styles'
 
@@ -8,7 +8,6 @@ import { ReactComponent as SodaPopIcon } from '../../assets/soda.svg'
 import { ReactComponent as IceCreamIcon } from '../../assets/ice-cream.svg'
 
 import menuImg from '../../assets/menu.svg'
-
 
 export function Sidebar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -45,7 +44,7 @@ export function Sidebar() {
           <li>
             <a href='#'>
               <IceCreamIcon />
-              <span>Sobremesas</span>
+              <span>Sorvetes</span>
             </a>
           </li>
         </ul>
