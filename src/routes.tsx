@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import MainPage from './pages/Main'
 import BurgersPage from './pages/Main/Burgers'
 import PizzasPage from './pages/Main/Pizzas'
-import BebidasPage from './pages/Main/Drinks'
+import DrinksPage from './pages/Main/Drinks'
+import IceCreamsPage from './pages/Main/IceCreams'
 
 export function AppRoutes() {
   return (
@@ -11,7 +12,8 @@ export function AppRoutes() {
       <Route path='/' element={<MainPage />}>
           <Route path='/' element={<BurgersPage />} />
           <Route path='pizzas' element={<PizzasPage />} />
-          <Route path='bebidas' element={<BebidasPage />} />
+          <Route path='bebidas' element={<DrinksPage />} />
+          <Route path='Sobremesas' element={<IceCreamsPage />} />
       </Route>
     </Routes>
   )
